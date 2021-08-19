@@ -1,0 +1,45 @@
+.section-about{
+    padding: $main-spacing * 2 $main-spacing;
+
+    @media (max-width:$breakpoint-xxs){
+        padding: $main-spacing * 2 $main-spacing / 2;
+    }
+}
+
+.about{
+    display: flex;
+    
+    @media (max-width: $breakpoint-md){
+        flex-direction: column-reverse;
+    }
+
+    &__text{
+        flex-basis: 40%;
+        margin-right: $main-spacing * 2;
+
+        @media (max-width: $breakpoint-lg){
+            margin-right: $main-spacing;
+        }
+
+        @media (max-width: $breakpoint-md){
+            margin-right: 0;
+            margin-top: $main-spacing * 2;
+        }
+
+        h3{
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: $primary-color;
+        }
+
+        p{
+            margin-top: $main-spacing / 2;
+            font-weight: 300;
+            line-height: 1.3rem;
+        }
+    }
+
+    &__image{
+        flex:1;
+    }
+}

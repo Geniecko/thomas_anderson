@@ -1,0 +1,13 @@
+html {
+    font-size: $base-font-size;
+    font-family: $font-family;
+
+    @media (max-width: $breakpoint-md){
+        font-size: $base-font-size - 2px;
+    }
+}
+
+p{
+    font-family: $paragraph-font-family;
+    letter-spacing: 2px;
+}

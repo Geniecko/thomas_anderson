@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700;800&display=swap');
+
+$base-font-size: 16px;
+
+$font-family:'Mukta', sans-serif;
+$paragraph-font-family:  'Roboto', sans-serif;
+
+$black-color: #0F0F0F;
+$white-color: #f2f2f2;
+$gray-color: #383838;
+$gray-color-font: #555555;
+$primary-color: #40C595;
+
+$main-spacing: 30px;
+$max-width: 1200px;
+
+$breakpoint-xxs: 400px;
+$breakpoint-xs: 600px;
+$breakpoint-md: 800px;
+$breakpoint-lg: 1000px;

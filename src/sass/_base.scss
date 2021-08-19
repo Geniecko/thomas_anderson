@@ -1,0 +1,146 @@
+@import 'variables';
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $black-color;
+    color: $white-color;
+    letter-spacing: 1px;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: $white-color;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+input{
+    font-family: $paragraph-font-family;
+}
+
+::placeholder {
+    color: $gray-color;
+    font-size: 0.8rem;
+    font-family: $paragraph-font-family;
+    letter-spacing: 3px;
+}
+
+.main-container{
+    max-width: $max-width;
+    margin: 0 auto;
+    margin-top: 150px + $main-spacing * 2;
+    
+    @media (max-width: $breakpoint-xs){
+        margin-top: 150px + $main-spacing;
+    }
+}
+
+.section-background{
+    position: relative;
+    width: 100%;
+    padding: 0;
+
+    &__headline{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+
+        &::before{
+            content: 'PHOTOGRAPHY';
+            position: absolute;
+            top: 50%;
+            left: -10vw;
+            transform: translateY(-50%);
+            font-size: 2.5rem;
+            font-weight: 800;
+
+            @media (max-width: $breakpoint-xs){
+                font-size: 2.5rem;
+                top: 65%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &--contact{
+            &::before{
+                content: 'GET IN TOUCH';
+                white-space: nowrap;
+
+                @media (max-width: $breakpoint-lg){
+                    left: -2vw;
+                }
+
+                @media (max-width: $breakpoint-xs){
+                    font-size: 2.5rem;
+                    top: 65%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        &--gallery{
+            &::before{
+                content: 'MY WORKS';
+                white-space: nowrap;
+                left: 35vw;
+
+                @media (max-width: $breakpoint-xs){
+                    font-size: 2.5rem;
+                    top: 65%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        h1{
+            text-align: center;
+            color: transparent;
+            font-size: 10rem;
+            font-weight: 800;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: $gray-color;
+            user-select: none;
+
+            @media (max-width: $breakpoint-xs){
+                font-size: 6.5rem;
+            }
+
+            @media (max-width:$breakpoint-xxs){
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+//scrollbar
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken($primary-color, 20%)
+}
