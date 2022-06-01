@@ -1,6 +1,6 @@
 ## Thomas Anderson - Portfolio
 
-#### Technologies used
+### Technologies used
 
 - HTML
 - CSS(SASS & BEM)
@@ -9,9 +9,9 @@
 - Figma
 - Photoshop
 
-#### Setup
+### Setup
 
 To run this project, install it locally using npm:
 
-Run ```npm install``` to install packages
-Run ```npm run prod``` to build js and css for production or run ```npm run start``` for development
+- Run ```npm install``` to install packages
+- Run ```npm run prod``` to build js and css for production or run ```npm run start``` for development
